@@ -19,9 +19,9 @@ img {
       position: fixed;
       font-family: Poppins;
       line-height: 80px;
-      margin-left: 2em;
+      margin-left: 1em;
       color: #fff;
-      font-size: 15px;
+      font-size: 30px;
       letter-spacing: 3px;
       font-weight: bold;
       text-transform: uppercase;
@@ -41,9 +41,9 @@ img {
       color: rgb(124, 124, 124);
       font-size: 12px;
       letter-spacing: 2px;
-      font-family: Poppins;
+      font-family: "Roboto";
       right: 100px;
-      line-height: 80px;
+      line-height: 70px;
       z-index: 1;
 }
 
@@ -57,7 +57,11 @@ img {
 }
 
 .menu ion-icon {
-      font-size: 24px;
+      font-size: 30px;
+}
+
+.menu a {
+      color: #6adb9d;
 }
 
 .header {
@@ -83,10 +87,14 @@ img {
       overflow: hidden;
 }
 
-.ml7 .letter {
+.ml7 .letter, .ml7 .word {
       transform-origin: 0 100%;
       display: inline-block;
       line-height: 1em;
+}
+
+p.letters {
+      font-weight: 500;
 }
 
 h1 {
@@ -99,7 +107,8 @@ h1 {
 }
 
 #tagline  {
-      width: 640px;
+      width: 100%;
+      max-width: 640px;
 }
 
 p {
@@ -211,17 +220,29 @@ button {
       }
 }
 
-@media(max-width: 900px) {
+@media(max-width: 991px) {
 
       .loading-screen {
             display: none;
       }
-      .ring img {
-            display: none;
+      .ring {
+            margin: 0% auto;
+            padding: 0%;
+            top: 5vh;
+            left: 0;
+            right: 0;
+            position: absolute;
+            width: 200%;
       }
 
-      .header p, button, .media, h1 {
-            display: none;
+      .header {
+            position: absolute;
+            top: 45vh;
+            left: 0;
+            right: 0;
+            transform: none;
+            padding: 0 2em;
+            z-index: 1;
       }
 
 }
