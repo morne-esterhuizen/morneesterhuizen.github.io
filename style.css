@@ -165,7 +165,7 @@ button {
       position: absolute;
       z-index: 1;
       color: grey;
-      font-size: 18px;
+      font-size: 14px;
       font-family: monospace;
       margin-left: 2em;
       bottom: 40px;
@@ -175,7 +175,7 @@ button {
       position: absolute;
       z-index: 1;
       color: grey;
-      font-size: 15px;
+      font-size: 14px;
       right: 0;
       font-family: Roboto;
       font-weight: 100;
