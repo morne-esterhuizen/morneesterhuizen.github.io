@@ -1,4 +1,4 @@
-
+$(document).ready(function(){
       TweenMax.to(".loading-screen", 4, {
             delay: 6.6,
             top: "-110%",
@@ -136,3 +136,4 @@ anime.timeline({loop: false})
       return 9000 + 50 * i;
     }
   });
+});
